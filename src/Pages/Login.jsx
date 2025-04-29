@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import home from "../assets/home.jpg";
+import { Link } from "react-router-dom";
+import Signup from "./Signup";
 
 const Login = () => {
   const [active, setActive] = useState(true);
@@ -56,7 +58,9 @@ const Login = () => {
         <div>
           <p className="text-gray-500 text-normal font-normal">
             Don't have an account?{" "}
-            <span className="text-blue-950 cursor-pointer">Sign up</span>
+            <Link to="/signup" className="text-blue-950 cursor-pointer">
+              Sign up
+            </Link>
           </p>
           <p className="text-gray-500 text-normal font-normal">
             Forgot your password?{" "}
